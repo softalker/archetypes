@@ -4,7 +4,7 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeArtifactId**
 - **archetypeVersion**
 
-An aditional property **archetypeCatalog** with the value ***local*** avoids a useless (and very slow) query to the Maven Central archetype registry
+An aditional property named **archetypeCatalog** with the value ***local*** must be specified to avoid a useless (and very slow) query against Maven Central
 
 This four values can be predefined by means of the the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
 
