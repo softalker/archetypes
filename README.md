@@ -22,7 +22,7 @@ You must provide them along with properties (if any) that are specific of the se
 
 An example:
 ```
--DgroupId=com -DartifactId=softalks.archetypes.void -Dversion=0.9-SNAPSHOT
+-DgroupId=com.softalks -DartifactId=archetypes.void -Dversion=0.9-SNAPSHOT
 ```
 Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this one:
 ```
