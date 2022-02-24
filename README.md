@@ -1,3 +1,4 @@
+[![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 # Softalks Maven archetypes
 To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you must send its three [coordinates](https://maven.apache.org/pom.html#maven-coordinates) to the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html)
 - **archetypeGroupId**
