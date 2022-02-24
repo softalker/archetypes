@@ -12,11 +12,7 @@ artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
 package=unnecessary # only used for jar packaging but always required by the maven-archetype-plugin
 ```
-And running:
-```
-mvn archetype:generate -Darchetype.properties=args.properties
-```
-Before using any of the archetypes defined in this project you must set up your [settings.xml](https://maven.apache.org/settings.html) file like this:
+Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this one:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <settings 
@@ -48,4 +44,8 @@ Before using any of the archetypes defined in this project you must set up your 
     </profile>
   </profiles>
 </settings>
+```
+And, finally, running the archetype generation:
+```
+mvn archetype:generate -Darchetype.properties=args.properties
 ```
