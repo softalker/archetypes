@@ -4,17 +4,13 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeArtifactId**
 - **archetypeVersion**
 
-An aditional property named **archetypeCatalog** with the value ***local*** must be specified to avoid a useless (and very slow) query against Maven Central
+The command has a query mode that cannot be used with this repository. You can avoid entering that mode providing the coordinates and an aditional property named **archetypeCatalog** with the value ***local***
 
-This four values can be predefined by means of the the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
+This four (and no other) values can also be predefined by means of the the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
 
-There are four parameters  that are required to create an archetype based Maven project and that, besides, can be preconfigured by means of the . 
-- The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (**1.0-SNAPSHOT** by default) identify the archetype
-- 
-
-This is a valid content for [that file](https://maven.apache.org/configure.html#mvn-jvm-config-file) (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
+A valid content for [that file](https://maven.apache.org/configure.html#mvn-jvm-config-file) (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
 ```
--DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeCatalog=local
+-DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
 There are three more mandatory properties whithout a deafult value to set for every archetype:
 - groupId
