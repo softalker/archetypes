@@ -2,6 +2,17 @@
 	xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd">
+	<requiredProperties>
+	    <requiredProperty key="actor">
+		<defaultValue>none</defaultValue>
+	    </requiredProperty>
+	    <requiredProperty key="token">
+		<defaultValue>none</defaultValue>
+	    </requiredProperty>
+	    <requiredProperty key="repository">
+		<defaultValue>none</defaultValue>
+	    </requiredProperty>
+	</requiredProperties>
 	<fileSets>
 		<fileSet filtered="true">
 			<directory>conf</directory>
