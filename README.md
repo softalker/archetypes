@@ -47,7 +47,7 @@ Before executing the command you must be sure to have your [settings.xml](https:
   </profiles>
 </settings>
 ```
-And, finally, running the archetype generation:
+And, finally, run the archetype generation:
 ```
 mvn archetype:generate -Darchetype.properties=args.properties
 ```
