@@ -4,10 +4,11 @@ Giving a file my.properties
 archetypeGroupId=com
 archetypeArtifactId=softalks.archetypes.void
 archetypeVersion=1.0-SNAPSHOT
+archetypeCatalog=local # to avoid querying maven central archetypes
 groupId=com
 artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
-package=unnecessary
+package=unnecessary # but required by the maven-archetype-plugin
 ```
 ```
 mvn archetype:generate -Darchetype.properties=my.properties
