@@ -1,5 +1,5 @@
 # Softalks Maven archetypes
-There are four parameters for the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) goal that can be preconfigured in the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. You must supply a value for these parameters to use any of the archetypes provided by this repository
+There are four parameters for the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) goal that can be preconfigured in the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. You must supply a value for all of them to use any of the archetypes provided by this repository (the ***archetypeCatalog*** parameter should have always the value ***local*** to avoid querying the the Maven Central archetype registry)
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeCatalog=local
 ```
