@@ -7,14 +7,18 @@ This is a valid content for that file (or a valid set of command line arguments)
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
-The rest of mandatory arguments can also be predefined but, in this case, using a properties file (let's call it **args.properties**) that will be later referenced from the command line:
+The rest of mandatory arguments shuld also be predefined but, in this case, using a properties file (let's call it **args.properties**) that would be later referenced from the command line:
 ```
 groupId=com
 artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
-package=unnecessary # only used for jar packaging but always required by the maven-archetype-plugin
 ```
-Note that each archetype can have its own required properties that you should include in the properties file
+But this posibility is not working rigth now (perhaps a bug must be filed) and you must pass all these parameters using the command line:
+```
+-DgroupId=com -DartifactId=softalks.archetypes.void -Dversion=0.9-SNAPSHOT
+```
+
+Note that each archetype can have its own required properties that you should include in the properties file/command line
 
 Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this one:
 ```
