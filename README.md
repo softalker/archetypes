@@ -3,23 +3,22 @@ There are four parameters of the [archetype:generate](https://maven.apache.org/a
 - The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (**1.0-SNAPSHOT** by default) identify the archetype
 - The value ***local*** of the parameter **archetypeCatalog** avoids an unnecesary (and very slow) query to the Maven Central archetype registry
 
-This is a valid content for that file (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
+This is a valid content for [that file](https://maven.apache.org/configure.html#mvn-jvm-config-file) (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
-You should be able to predefine the rest of mandatory arguments using, in this case, a properties file (let's call it **args.properties**) that would be later referenced by the command line argument **archetype.properties**:
-```
-groupId=com
-artifactId=softalks.archetypes.void
-version=0.9-SNAPSHOT
-```
-But this posibility seems not to be working rigth now and you must pass all these parameters using the command line:
+There are three more mandatory properties whithout a deafult value to set for every archetype:
+- groupId
+- artifactId
+- version
+- package
+
+You must provide them along with properties (if any) that are specific of the selected archetype. You should be able to provide this properties, one by one, when running Maven en in interactive mode
+
+An example:
 ```
 -DgroupId=com -DartifactId=softalks.archetypes.void -Dversion=0.9-SNAPSHOT
 ```
-
-Note that each archetype can have its own required properties that you should include in the properties file/command line
-
 Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this one:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
