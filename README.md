@@ -5,7 +5,7 @@ There are four parameters of the [archetype:generate](https://maven.apache.org/a
 
 This is a valid content for [that file](https://maven.apache.org/configure.html#mvn-jvm-config-file) (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
 ```
--DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
+-DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeCatalog=local
 ```
 There are three more mandatory properties whithout a deafult value to set for every archetype:
 - groupId
