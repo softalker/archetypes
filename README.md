@@ -1,15 +1,16 @@
 # Softalks Maven archetypes
-To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you must provide its three [coordinates](https://maven.apache.org/pom.html#maven-coordinates) to the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html)
-- **archetypeGroupId** (-DarchetypeGroupId=...)
-- **archetypeArtifactId** (-DarchetypeArtifactId=...)
-- **archetypeVersion** (-DarcheVersion=...)
+To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you must send its three [coordinates](https://maven.apache.org/pom.html#maven-coordinates) to the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html)
+- **archetypeGroupId**
+- **archetypeArtifactId**
+- **archetypeVersion**
 
- All this command's parameters must be passed with the property prefix **-D** (e.g. `-Dhello=world`)
- (directly or by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
+An aditional property **archetypeCatalog** with the value ***local*** avoids a useless (and very slow) query to the Maven Central archetype registry
+
+This four values can be predefined by means of the the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
 
 There are four parameters  that are required to create an archetype based Maven project and that, besides, can be preconfigured by means of the . 
 - The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (**1.0-SNAPSHOT** by default) identify the archetype
-- The value ***local*** of the parameter **archetypeCatalog** avoids a useless (and very slow) query to the Maven Central archetype registry
+- 
 
 This is a valid content for [that file](https://maven.apache.org/configure.html#mvn-jvm-config-file) (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
 ```
