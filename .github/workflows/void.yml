@@ -26,4 +26,5 @@ jobs:
             }]
       - run: |
           cd void
+          mvn --batch-mode build-helper:parse-version versions:set -DnewVersion=${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion} versions:commit
           mvn --batch-mode --update-snapshots deploy
