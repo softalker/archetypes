@@ -40,9 +40,6 @@ Before executing the command you must be sure to have your [settings.xml](https:
         <repository>
           <id>archetype</id>
           <url>https://maven.pkg.github.com/softalks/archetypes</url>
-          <snapshots>
-            <enabled>true</enabled>
-          </snapshots>
         </repository>
       </repositories>
     </profile>
