@@ -9,6 +9,7 @@ artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
 package=unnecessary
 ```
+```
 mvn archetype:generate -Darchetype.properties=my.properties
 ```
 Before using any of the archetypes defined in this project you must set up your [settings.xml](https://maven.apache.org/settings.html) file like this:
