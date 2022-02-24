@@ -4,14 +4,13 @@ Giving a file my.properties
 archetypeGroupId=com
 archetypeArtifactId=softalks.archetypes.void
 archetypeVersion=1.0-SNAPSHOT
-archetypeCatalog=local # to avoid querying maven central archetypes
 groupId=com
 artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
 package=unnecessary # but required by the maven-archetype-plugin
 ```
 ```
-mvn archetype:generate -Darchetype.properties=my.properties
+mvn archetype:generate -DarchetypeCatalog=local -Darchetype.properties=my.properties
 ```
 Before using any of the archetypes defined in this project you must set up your [settings.xml](https://maven.apache.org/settings.html) file like this:
 ```
