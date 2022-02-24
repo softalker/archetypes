@@ -2,9 +2,9 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>undefined</groupId>
-    <artifactId>undefined</artifactId>
-    <version>${version}</version>
+    <groupId>void</groupId>
+    <artifactId>void</artifactId>
+    <version>0</version>
     <packaging>pom</packaging>
 
     <properties>
@@ -15,7 +15,7 @@
         <dependency>
             <groupId>$groupId</groupId>
             <artifactId>$artifactId</artifactId>
-            <version>${version}</version>
+            <version>$version</version>
         </dependency>
     </dependencies>
 
