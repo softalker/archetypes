@@ -1,5 +1,5 @@
 # Softalks Maven archetypes
-To use an archetype provided by this repository you need to pass three arguments (directly or by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file) to the `mvn [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html)` command
+To use the archetypes of this repository provide the three coordinates of the desired archetype as parameters of the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) (directly or by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 - **archetypeGroupId**
 - **archetypeArtifactId**
 - **archetypeVersion**
