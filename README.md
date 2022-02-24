@@ -52,5 +52,9 @@ Before executing the command you must be sure to have your [settings.xml](https:
 ```
 And, finally, run the archetype generation:
 ```
+mvn archetype:generate -DgroupId=com -DartifactId=softalks.archetypes.void -Dversion=0.9-SNAPSHOT
+```
+Or, when possible:
+```
 mvn archetype:generate -Darchetype.properties=args.properties
 ```
