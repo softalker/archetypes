@@ -1,19 +1,16 @@
 # Softalks Maven archetypes
-There are four parameters of the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) goal that can be preconfigured in the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. All of them are required to create a project based on an archetype provided by this repository. The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (this one defaulting to **1.0-SNAPSHOT**) define the archetype to be used. The **archetypeCatalog** parameter should have always the value ***local*** to avoid an unnecesary (and slow) query to the Maven Central archetype registry
+There are four parameters of the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) goal that can be preconfigured in the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. All of them are required to create a project based on an archetype provided by this repository. The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (this one defaulting to **1.0-SNAPSHOT**) indentify the archetype to be used. The **archetypeCatalog** parameter should have always the value ***local*** to avoid an unnecesary (and slow) query to the Maven Central archetype registry
 
 This is a valid content for that file (or a valid set of command line arguments) selecting [one](https://github.com/softalks/archetypes/packages/1271840?version=1.0) of this repository's archetypes:
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
-The rest of mandatory arguments can be predefined using a properties file (let's say is called **args.properties**):
+The rest of mandatory arguments can also be predefined but, in this case, using a properties file (let's call it **args.properties**) that will be referenced from the command line:
 ```
-archetypeGroupId=com
-archetypeArtifactId=softalks.archetypes.void
-archetypeVersion=1.0-SNAPSHOT
 groupId=com
 artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
-package=unnecessary # only used for jar packaging but always required
+package=unnecessary # only used for jar packaging but always required by the maven-archetype-plugin
 ```
 And running:
 ```
