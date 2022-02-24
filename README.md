@@ -7,7 +7,7 @@ This is a valid content for that file (or a valid set of command line arguments)
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
-The rest of mandatory arguments shuld also be predefined but, in this case, using a properties file (let's call it **args.properties**) that would be later referenced by the command line argument **archetype.properties**:
+You should be able to predefine the rest of mandatory arguments (using, in this case, a properties, let's call it **args.properties** , file) that would be later referenced by the command line argument **archetype.properties**:
 ```
 groupId=com
 artifactId=softalks.archetypes.void
