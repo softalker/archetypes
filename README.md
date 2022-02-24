@@ -1,7 +1,7 @@
 # Softalks Maven archetypes
 There are four parameters of the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) goal that are required to create an archetype based Maven project and that, besides, can be preconfigured by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. 
 - The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (**1.0-SNAPSHOT** by default) identify the archetype
-- The value ***local*** of the parameter **archetypeCatalog** avoids an unnecesary (and very slow) query to the Maven Central archetype registry
+- The value ***local*** of the parameter **archetypeCatalog** avoids a useless (and very slow) query to the Maven Central archetype registry
 
 This is a valid content for [that file](https://maven.apache.org/configure.html#mvn-jvm-config-file) (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
 ```
