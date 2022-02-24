@@ -1,6 +1,7 @@
 # Softalks Maven archetypes
+There are four parameters for the archetype:generate goal that can be preconfigured in the .mvn/jvm.config file
 ```
--DarchetypeCatalog=local -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0-SNAPSHOT
+-DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeCatalog=local
 ```
 To create a Maven project based on an archetype provided by this project you should start by defining a properties file with all the mandatory arguments:
 ```
