@@ -1,5 +1,5 @@
 # Softalks Maven archetypes
-Giving a file args.properties like this:
+To create a Maven project based on an archetype provided by this project you should start by defining a properties file with all the mandatory arguments:
 ```
 archetypeGroupId=com
 archetypeArtifactId=softalks.archetypes.void
@@ -7,7 +7,7 @@ archetypeVersion=1.0-SNAPSHOT
 groupId=com
 artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
-package=unnecessary # but required by the maven-archetype-plugin
+package=unnecessary # only used for jar packaging but always required
 ```
 And running:
 ```
