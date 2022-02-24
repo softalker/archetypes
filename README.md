@@ -14,7 +14,7 @@ package=unnecessary # only used for jar packaging but always required
 ```
 And running:
 ```
-mvn archetype:generate -DarchetypeCatalog=local -Darchetype.properties=args.properties
+mvn archetype:generate -Darchetype.properties=args.properties
 ```
 Before using any of the archetypes defined in this project you must set up your [settings.xml](https://maven.apache.org/settings.html) file like this:
 ```
