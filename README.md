@@ -5,11 +5,11 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeArtifactId**
 - **archetypeVersion**
 
-The command has a query mode that cannot be used with this repository. You can (almost) avoid entering that mode by providing the three coordinates alongside an aditional property with name **archetypeCatalog** loaded a fixed value: ***local***
+The command has a query mode that cannot be used with this repository. You can (almost) avoid entering that mode by providing the three coordinates alongside an aditional property: **archetypeCatalog** with a fixed value: ***local***
 
-This four values (and no other) can be predefined by means of the the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
+This four values (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
 
-The following file content (or command line arguments) will allow to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
+The following file content (or command line arguments) will allow creating a project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
