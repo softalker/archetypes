@@ -13,7 +13,7 @@ groupId=com
 artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
 ```
-But this posibility is not working rigth now (perhaps a bug must be filed) and you must pass all these parameters using the command line:
+But this posibility seems not to be working rigth now and you must pass all these parameters using the command line:
 ```
 -DgroupId=com -DartifactId=softalks.archetypes.void -Dversion=0.9-SNAPSHOT
 ```
