@@ -1,6 +1,15 @@
 # Softalks Maven archetypes
+Giving a file my.properties
 ```
-mvn archetype:generate -DarchetypeCatalog=local -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0
+archetypeGroupId=com
+archetypeArtifactId=softalks.archetypes.void
+archetypeVersion=1.0-SNAPSHOT
+groupId=com
+artifactId=softalks.archetypes.void
+version=0.9-SNAPSHOT
+package=unnecessary
+```
+mvn archetype:generate -Darchetype.properties=my.properties
 ```
 Before using any of the archetypes defined in this project you must set up your [settings.xml](https://maven.apache.org/settings.html) file like this:
 ```
