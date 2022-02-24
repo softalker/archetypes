@@ -1,8 +1,8 @@
 # Softalks Maven archetypes
-To use the archetypes of this repository provide the three coordinates of the desired archetype as parameters of the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) (directly or by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
-- **archetypeGroupId**
-- **archetypeArtifactId**
-- **archetypeVersion**
+To use the archetypes of this repository you muest provide the three coordinates of the desired archetype as parameters of the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) (directly or by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
+- **archetypeGroupId** (-DarchetypeGroupId=...)
+- **archetypeArtifactId** (-DarchetypeArtifactId=...)
+- **archetypeVersion** (-DarcheVersion=...)
 
 
 There are four parameters  that are required to create an archetype based Maven project and that, besides, can be preconfigured by means of the . 
