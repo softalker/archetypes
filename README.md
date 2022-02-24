@@ -3,7 +3,7 @@ There are four parameters of the [archetype:generate](https://maven.apache.org/a
 - The parameters **archetypeGroupId**, **archetypeArtifactId** and **archetypeVersion** (**1.0-SNAPSHOT** by default) identify the archetype
 - The value ***local*** of the parameter **archetypeCatalog** avoids an unnecesary (and very slow) query to the Maven Central archetype registry
 
-This is a valid content for that file (or a valid set of command line arguments) to create a new project based on [one](https://github.com/softalks/archetypes/tree/main/void) of this repository's archetypes
+This is a valid content for that file (or a valid set of command line arguments) to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) archetype
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
