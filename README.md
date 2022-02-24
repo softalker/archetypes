@@ -8,7 +8,7 @@ The command has a query mode that cannot be used with this repository. You need 
 
 This four (and no other) values can also be predefined by means of the the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file)) file
 
-This file contents//command line arguments will allow to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
+This file contents (or command line arguments) will allow to create a new project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
 ```
 -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
