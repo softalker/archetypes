@@ -1,5 +1,5 @@
 # Softalks Maven archetypes
-To use the archetypes of this repository you must provide the three coordinates of the desired archetype as parameters of the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html). These and all the parameters of this command must be passed with the -D prefix (e.g. `-Dhello=world`)
+To use an archetype of this repository you must provide its three coordinates as parameters of the `mvn archetype:generate` [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html). These and all the parameters of this command must be passed with the -D prefix (e.g. `-Dhello=world`)
 - **archetypeGroupId** (-DarchetypeGroupId=...)
 - **archetypeArtifactId** (-DarchetypeArtifactId=...)
 - **archetypeVersion** (-DarcheVersion=...)
