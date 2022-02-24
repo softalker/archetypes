@@ -1,4 +1,7 @@
 # Softalks Maven archetypes
+```
+-DarchetypeCatalog=local -DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0-SNAPSHOT
+```
 To create a Maven project based on an archetype provided by this project you should start by defining a properties file with all the mandatory arguments:
 ```
 archetypeGroupId=com
