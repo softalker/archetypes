@@ -12,6 +12,8 @@ artifactId=softalks.archetypes.void
 version=0.9-SNAPSHOT
 package=unnecessary # only used for jar packaging but always required by the maven-archetype-plugin
 ```
+Note that each archetype can have its own required properties that you should include in the properties file
+
 Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this one:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
