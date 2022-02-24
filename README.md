@@ -11,9 +11,9 @@ This four values (and no other) can be predefined on the [.mvn/jvm.config](https
 
 The following file content (or command line arguments) will allow creating a project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
 ```
--DarchetypeGroupId=com -DarchetypeArtifactId=softalks.archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
+-DarchetypeGroupId=com.softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
-There are three more mandatory properties whithout a deafult value to set for every archetype:
+There are four more mandatory properties to set for every archetype:
 - groupId
 - artifactId
 - version
