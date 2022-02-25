@@ -14,20 +14,15 @@ The following file content (or command line arguments) will allow creating a pro
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-Every archetype needs another four values to know how to create the Maven project:
+Every archetype needs another four properties before you can use it to create the project:
 - groupId
 - artifactId
 - version (default: **1.0-SNAPSHOT**)
-- package (default: **${groupId}**. Not used for projects having `<packaging>pom</packaging>` in pom.xml)
-- interactiveMode (default: **true**. Needed only to force interactive mode when --batch-mode/-B are in place)
+- package (default: **${groupId}**)
 
-You must provide also the properties (if any) required by the selected archetype:
-- As command line arguments (valid for --batch-mode and --interactive-mode)
-- One by one, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
+The selected archetype can define its own required properties with its own default values. Check its documentation before using it
 
-  > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties having a default value behave like its generic counterparts (version & package) when running in interactive mode. That is: asking the user before setting the property with its default value
-
-Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this:
+You must also configure your [settings.xml](https://maven.apache.org/settings.html) file to be like this:
 ```
 <settings 
 	xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -51,7 +46,7 @@ Before executing the command you must be sure to have your [settings.xml](https:
         <activeByDefault>true</activeByDefault>
       </activation>
       <repositories>
-      ...
+        ...
         <repository>
           <id>archetype</id>
           <url>https://maven.pkg.github.com/softalks/archetypes</url>
