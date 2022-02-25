@@ -18,7 +18,7 @@ Every archetype needs another four properties before you can use it to create th
 - groupId
 - artifactId
 - version (default: **1.0-SNAPSHOT**)
-- package (default: **${groupId}**)
+- package (default: **${groupId}**. Only used for projects containing Java code)
 
 The selected archetype can define its own required properties and default values. Check its documentation before using it
 
@@ -57,12 +57,6 @@ You must also configure your [settings.xml](https://maven.apache.org/settings.ht
   ...
 </settings>
 ```
-Lets suposse you:
-- have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype
-- want to use that archetype to generate a project depending on `junit:junit:4.11`. 
-
-You can get your project, in both batch and interactive modes, by running:
+Lets create a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11` using the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) Maven goal
 ```
 mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
-
-[command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) `mvn archetype:generate`
