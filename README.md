@@ -60,6 +60,6 @@ Before executing the command you must be sure to have your [settings.xml](https:
   ...
 </settings>
 ```
-And, finally, run the archetype generation:
+And, finally, run the archetype generation. Lets suposse you have the .mvn/jvm.options file specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype
 ```
 mvn archetype:generate ...
