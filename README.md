@@ -23,7 +23,7 @@ You can provide this properties alongside the properties (if any) required by th
 - As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in both batch and interactive modes
 - One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
 
-  > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties with default values behave like its generic counterparts (version & package) do: Asking the user before setting the property with its default value
+  > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties with default values behave like its generic counterparts (version & package). That is: Ask the user before setting the property with its default value
 
 An example:
 ```
