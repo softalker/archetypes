@@ -10,7 +10,7 @@ Loading **archetypeCatalog** with the value ***internal***  will avoid an unnece
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
-The following file content (or command line arguments) will allow creating a project based on a Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void) (archetype for transient projects having one specific dependency)
+The following file content (or command line arguments) will allow creating a project based on a Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
@@ -20,7 +20,7 @@ Every archetype needs another four properties before you can use it to create th
 - version (default: **1.0-SNAPSHOT**)
 - package (default: **${groupId}**)
 
-The selected archetype can define its own required properties with its own default values. Check its documentation before using it
+The selected archetype can define its own required properties and default values. Check its documentation before using it
 
 You must also configure your [settings.xml](https://maven.apache.org/settings.html) file to be like this:
 ```
