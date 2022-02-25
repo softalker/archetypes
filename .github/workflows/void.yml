@@ -1,7 +1,7 @@
 on:
   push:
     paths:
-      - 'void/**.java'
+      - 'void/**'
       - '.github/workflows/void.yml'
   workflow_dispatch:
 jobs:
