@@ -13,14 +13,15 @@ The following file content (or command line arguments) will allow creating a pro
 ```
 -DarchetypeGroupId=com.softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
-Every archetype needs four more properties to be defined:
+Every archetype needs four more values to know how to create the Maven project:
 - groupId
 - artifactId
 - version (default: **1.0-SNAPSHOT**)
-- package (default: **${groupId}**)
+- package (default: **${groupId}**. Not used for projects having `<packaging>pom</packaging>` in pom.xml)
+- interactiveMode (default: **true**. Needed only to force interactive mode when --batch-mode/-B are in place)
 
-You must provide this properties alongside the properties (if any) required by the selected archetype in either of two ways:
-- As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in both of batch and interactive modes
+You must provide also the properties (if any) required by the selected archetype:
+- As command line arguments (valid for --batch-mode and --interactive-mode)
 - One by one, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
 
   > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties having a default value behave like its generic counterparts (version & package) when running in interactive mode. That is: asking the user before setting the property with its default value
