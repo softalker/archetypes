@@ -60,6 +60,6 @@ Before executing the command you must be sure to have your [settings.xml](https:
   ...
 </settings>
 ```
-And, finally, run the archetype generation. Lets suposse you have the .mvn/jvm.options file specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype
+And, finally, run the archetype generation. Lets suposse you have the .mvn/jvm.options file specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype and you want to generate a void project depending on junit:junit:4.11. Regardless of the execution mode (batch/interactive) you can get it by executing this command
 ```
-mvn archetype:generate ...
+mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
