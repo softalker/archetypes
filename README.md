@@ -4,17 +4,17 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeGroupId**
 - **archetypeArtifactId**
 
-If you do not want to use the default version (1.0) you need to provide also a value for **archetypeVersion**
+If you don't want to use the default version (**1.0**) you need also to provide a value for **archetypeVersion**
 
-The command has a query mode that cannot be used with this repository. You can (almost) avoid entering that mode by providing the three coordinates alongside an aditional property: **archetypeCatalog** with a fixed value: ***local***
+Providing the value ***local*** or ***internal*** for **archetypeCatalog** you will avoid an unuseful (in this case) and slow query to the remote catalog
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
 The following file content (or command line arguments) will allow creating a project based on a Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void) (archetype for transient projects having one specific dependency)
 ```
--DarchetypeGroupId=com.softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
+-DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-Every archetype needs four more values to know how to create the Maven project:
+Every archetype needs another four values to know how to create the Maven project:
 - groupId
 - artifactId
 - version (default: **1.0-SNAPSHOT**)
