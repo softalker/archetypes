@@ -1,24 +1,30 @@
 <archetype-descriptor name="archetypes.void"
-	xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd">
-	<requiredProperties>
-	    <requiredProperty key="actor"/>
-	    <requiredProperty key="token"/>
-	    <requiredProperty key="repository"/>
-	</requiredProperties>
-	<fileSets>
-		<fileSet filtered="true">
-			<directory>conf</directory>
-			<includes>
-				<include>settings.xml</include>
-			</includes>
-		</fileSet>
-		<fileSet>
-			<directory>.mvn</directory>
-			<includes>
-				<include>*.config</include>
-			</includes>
-		</fileSet>
-	</fileSets>
+    xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd">
+  <requiredProperties>
+    <requiredProperty key="repository.username">
+      <defaultValue>undefined"</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="repository.password">
+      <defaultValue>undefined"</defaultValue>
+    </requiredProperty>
+    <requiredProperty key="repository.url">
+      <defaultValue>undefined</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+  <fileSets>
+    <fileSet filtered="true">
+      <directory>conf</directory>
+        <includes>
+          <include>settings.xml</include>
+        </includes>
+    </fileSet>
+    <fileSet>
+      <directory>.mvn</directory>
+      <includes>
+        <include>*.config</include>
+        </includes>
+    </fileSet>
+  </fileSets>
 </archetype-descriptor>
