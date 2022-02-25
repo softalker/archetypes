@@ -9,7 +9,7 @@ The command has a query mode that cannot be used with this repository. You can (
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
-The following file content (or command line arguments) will allow creating a project based on [an specific](https://github.com/softalks/archetypes/tree/main/void) Softalks Maven archetype:
+The following file content (or command line arguments) will allow creating a project based on the Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
 -DarchetypeGroupId=com.softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
@@ -19,7 +19,7 @@ There are four more mandatory properties to set for every archetype:
 - version (default: **1.0-SNAPSHOT**)
 - package (default: **${groupId}**)
 
-You must provide this properties alongside the selected archetype required properties (if any):
+You must provide this properties alongside the properties, if any, required by the selected archetype:
 - As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in both batch and interactive modes
 - One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
 
