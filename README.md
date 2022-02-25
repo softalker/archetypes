@@ -23,12 +23,8 @@ You can provide this properties alongside the properties (if any) required by th
 - As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in both batch and interactive modes
 - One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
 
-  > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties with default values behave like its generic counterparts (version & package). That is: Ask the user before setting the property with its default value
+  > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties with default values behave like its generic counterparts (version & package) when running in interactive mode (asking the user before setting the property with its default value)
 
-An example:
-```
--DgroupId=com.softalks -DartifactId=archetypes.void -Dversion=0.9-SNAPSHOT
-```
 Before executing the command you must be sure to have your [settings.xml](https://maven.apache.org/settings.html) file configured like this one:
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -61,9 +57,4 @@ Before executing the command you must be sure to have your [settings.xml](https:
 ```
 And, finally, run the archetype generation:
 ```
-mvn archetype:generate -DgroupId=com -DartifactId=softalks.archetypes.void -Dversion=0.9-SNAPSHOT
-```
-Or, when possible:
-```
-mvn archetype:generate -Darchetype.properties=args.properties
-```
+mvn archetype:generate ...
