@@ -24,7 +24,8 @@ jobs:
               "username": "${{ github.actor }}",
               "password": "${{ secrets.GITHUB_TOKEN }}"
             }]
-      - run: |
+      - name: main
+        run: |
           cd void
           mvn --batch-mode build-helper:parse-version versions:set -DnewVersion=${parsedVersion.majorVersion}.${parsedVersion.nextMinorVersion} versions:commit
           mvn --batch-mode --update-snapshots deploy
