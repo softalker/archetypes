@@ -4,8 +4,7 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeGroupId**
 - **archetypeArtifactId**
 
-its three [coordinates](https://maven.apache.org/pom.html#maven-coordinates) to 
-- **archetypeVersion**
+If you do not want to use the default version (1.0) you need to provide also a value for **archetypeVersion**
 
 The command has a query mode that cannot be used with this repository. You can (almost) avoid entering that mode by providing the three coordinates alongside an aditional property: **archetypeCatalog** with a fixed value: ***local***
 
