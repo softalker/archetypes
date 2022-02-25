@@ -3,13 +3,13 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd">
   <requiredProperties>
-    <requiredProperty key="repository.username">
+    <requiredProperty key="repositoryUsername">
       <defaultValue>undefined"</defaultValue>
     </requiredProperty>
-    <requiredProperty key="repository.password">
+    <requiredProperty key="repositoryPassword">
       <defaultValue>undefined"</defaultValue>
     </requiredProperty>
-    <requiredProperty key="repository.url">
+    <requiredProperty key="repositoryUrl">
       <defaultValue>undefined</defaultValue>
     </requiredProperty>
   </requiredProperties>
