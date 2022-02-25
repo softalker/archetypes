@@ -16,12 +16,13 @@ The following file content (or command line arguments) will allow creating a pro
 There are four more mandatory properties to set for every archetype:
 - groupId
 - artifactId
-- version (1.0-SNAPSHOT by default)
-- package (${groupId by default})
+- version (default: **1.0-SNAPSHOT*)
+- package (default: **${groupId}**)
 
 You must provide this properties alongside the selected archetype required properties (if any):
 - As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in batch and interactive modes
-- One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true` (the first argument forces interactive mode, the default, if batch configuration is in place. The second one makes archetype specific properties with default values behave the same its generic archetype counterparts do)
+- One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
+> The first argument forces interactive mode, the default, if batch mode is in place. The second one makes archetype specific properties with default values behave the same its generic archetype counterparts do)
 
 An example:
 ```
