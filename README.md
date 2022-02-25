@@ -19,7 +19,9 @@ There are four more mandatory properties to set for every archetype:
 - version (1.0-SNAPSHOT by default)
 - package (${groupId by default})
 
-You must provide them along with properties (if any) that are specific of the selected archetype. You should be able to provide this properties, one by one, when running Maven en in interactive mode
+You must provide this properties alongside the selected archetype required properties (if any):
+- As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`)
+- One by one, when requested, by using interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true` (the second argument makes archetype specific properties with default values behave the same way generic archetype properties do)
 
 An example:
 ```
