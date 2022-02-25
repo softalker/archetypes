@@ -60,6 +60,9 @@ Before executing the command you must be sure to have your [settings.xml](https:
   ...
 </settings>
 ```
-Lets suposse you have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype and that you want to use that archetype to generate a project depending on `junit:junit:4.11`. Regardless of the execution mode (batch/interactive) you can get it by executing:
+Lets suposse that:
+- you have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype and that 
+- you want to use that archetype to generate a project depending on `junit:junit:4.11`. 
+Regardless of the execution mode (batch/interactive) you can get it by executing:
 ```
 mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
