@@ -16,8 +16,8 @@ The following file content (or command line arguments) will allow creating a pro
 There are four more mandatory properties to set for every archetype:
 - groupId
 - artifactId
-- version
-- package
+- version (1.0-SNAPSHOT by default)
+- package (${groupId by default})
 
 You must provide them along with properties (if any) that are specific of the selected archetype. You should be able to provide this properties, one by one, when running Maven en in interactive mode
 
