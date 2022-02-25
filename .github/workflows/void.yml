@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - 'void/**.*'
+      - '.github/workflows/void.yml'
   workflow_dispatch:
 jobs:
   build:
