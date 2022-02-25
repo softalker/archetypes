@@ -20,10 +20,10 @@ There are four more mandatory properties to set for every archetype:
 - package (default: **${groupId}**)
 
 You must provide this properties alongside the selected archetype required properties (if any):
-- As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in batch and interactive modes
+- As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in both batch and interactive modes
 - One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
 
-  > The first argument forces interactive mode, the default, if batch mode is in place. The second one makes archetype specific properties with default values behave the same its generic archetype counterparts do (asking the user before setting the default value)
+  > The first argument forces interactive mode (the default) if batch mode is in place. The second one makes archetype specific properties with default values behave like its generic counterparts (version & package) do: Asking the user before setting the property with its default value
 
 An example:
 ```
