@@ -9,7 +9,7 @@ The command has a query mode that cannot be used with this repository. You can (
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
-The following file content (or command line arguments) will allow creating a project based on a Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
+The following file content (or command line arguments) will allow creating a project based on a Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void) (that generates transient projects having one specific dependency)
 ```
 -DarchetypeGroupId=com.softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=local
 ```
@@ -62,6 +62,6 @@ Before executing the command you must be sure to have your [settings.xml](https:
 ```
 Finally you need to run the archetype generation
 
-Lets suposse you have the .mvn/jvm.options file specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype and you want to generate a void project (a transient project with an specific dependency) depending on **junit:junit:4.11**. Regardless of the execution mode (batch/interactive) you can get it by executing this command:
+Lets suposse you have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype and you want to generate a project depending on **junit:junit:4.11**. Regardless of the execution mode (batch/interactive) you can get it by executing this command:
 ```
 mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
