@@ -19,7 +19,7 @@ Every archetype needs four more properties to be defined:
 - version (default: **1.0-SNAPSHOT**)
 - package (default: **${groupId}**)
 
-You must provide this properties alongside the properties (if any) required by the selected archetype. There are two ways fo do this:
+You must provide this properties alongside the properties (if any) required by the selected archetype in either of two ways:
 - As command line arguments (e.g. `mvn archetype:generate ... -DgroupId=...`) what will work in both batch and interactive modes
 - One by one, when requested, in interactive mode: `mvn archetype:generate -DinteractiveMode=true -DaskForDefaultPropertyValues=true`
 
