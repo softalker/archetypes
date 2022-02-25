@@ -6,7 +6,7 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 
 If you don't want to use the default version (**1.0**) you need also to load the property **archetypeVersion**
 
-Loading **archetypeCatalog** with ***local*** or ***internal***  will avoid an unuseful (in this case) and slow query to the remote catalog
+Loading **archetypeCatalog** with the value ***internal***  will avoid an unnecesary query to the Maven remote catalog (this could not happen in future Maven versions)
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
