@@ -57,6 +57,6 @@ You must also configure your [settings.xml](https://maven.apache.org/settings.ht
   ...
 </settings>
 ```
-Lets create a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11` using the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) Maven goal
+We can now create (by example) a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11` using the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) Maven goal
 ```
-mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
+mvn archetype:generate --batch-mode -DgroupId=junit -DartifactId=junit -Dversion=4.11
