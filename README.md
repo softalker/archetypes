@@ -64,6 +64,6 @@ Lets suposse you:
 - have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above for using the [void](https://github.com/softalks/archetypes/tree/main/void) archetype
 - want to use that archetype to generate a project depending on `junit:junit:4.11`. 
 
-You can get it (regardless of the execution mode) by executing:
+You can get your project, in both batch and interactive modes, by running:
 ```
 mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
