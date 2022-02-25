@@ -1,6 +1,6 @@
 [![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 # Softalks Maven archetypes
-To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you must provide the value for two properties before invoking the [command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) `mvn archetype:generate`:
+To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you must load the following two properties::
 - **archetypeGroupId**
 - **archetypeArtifactId**
 
@@ -69,3 +69,5 @@ Lets suposse you:
 You can get your project, in both batch and interactive modes, by running:
 ```
 mvn archetype:generate -DgroupId=junit -DartifactId=junit -Dversion=4.11
+
+[command](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) `mvn archetype:generate`
