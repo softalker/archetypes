@@ -1,6 +1,6 @@
 [![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 # Softalks Maven archetypes
-To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you have to identify it by loading three properties:
+To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you have first to identify it by loading three properties:
 - **archetypeGroupId**
 - **archetypeArtifactId**
 - **archetypeVersion** (default: **1.0**)
