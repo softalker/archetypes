@@ -11,9 +11,9 @@ This four values (and no other) can be predefined on the [.mvn/jvm.config](https
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-> You can also put this content directly on the command line when invoking the `archetype:generate` goal
+> You could prefer not to use that file and put this content directly on the command line when invoking the `archetype:generate` goal, al you do with the rest of properties needed for each archetype generation
 
-Every archetype needs another four properties before you can use it to create the project:
+Every archetype needs another four properties before you can use it to generata a project:
 - groupId
 - artifactId
 - version (default: **1.0-SNAPSHOT**)
