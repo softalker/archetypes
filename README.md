@@ -7,11 +7,11 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 
 The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-plugin/) (at least in its version `3.2.1`) loads by default a big remote catalog of archetypes that are not going to be used in this case. Set also the **archetypeCatalog** property with the value **internal** to avoid it
 
-This four values (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content will allow the generation of projects based on the Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
+This four parameters of the generation process (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content will allow the generation of projects based on the Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-> You could prefer not to use that file and put this content directly on the command line when invoking the `archetype:generate` goal, al you do with the rest of properties needed for each archetype generation
+> If prefer not to use that file you must put the content directly on the command line, when invoking the `archetype:generate` goal, as you need to do with the rest of properties needed for the project generation
 
 Every archetype needs another four properties before you can use it to generata a project:
 - groupId
