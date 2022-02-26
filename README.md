@@ -5,7 +5,7 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeArtifactId**
 - **archetypeVersion** (default: **1.0**)
 
-Setting also **archetypeCatalog** with the value **internal**  will avoid an unnecesary load of the Maven remote catalog (at least in Maven 3.8.1)
+The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-plugin/) (at least in its 3.2.1 version) loads by default the remote catalog. Set also the **archetypeCatalog** property with the value **internal**  to avoid it and speed up the creation of your project
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
