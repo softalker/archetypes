@@ -1,11 +1,11 @@
 [![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 # Softalks Maven archetypes
-To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you have first to identify it by loading three properties:
+To use an [archetype](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) of this repository you have first to identify it by setting three properties:
 - **archetypeGroupId**
 - **archetypeArtifactId**
 - **archetypeVersion** (default: **1.0**)
 
-Loading the property **archetypeCatalog** with the value **internal**  will avoid an unnecesary query to the Maven remote catalog (this could not be neccesary in future Maven versions)
+Setting also **archetypeCatalog** with the value **internal**  will avoid an unnecesary query to the Maven remote catalog (this could not be neccesary in future Maven versions)
 
 This four values (and no other) can be predefined by means of the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file
 
