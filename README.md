@@ -20,7 +20,7 @@ Four more properties needs to be set before launching generation:
 - **package** (default: **${groupId}**. Only used for projects containing Java code)
 
 The selected archetype can have its own required properties and default values. Check its documentation before using it
-
+## User configuration
 Your [settings.xml](https://maven.apache.org/settings.html) file needs to be configured to use this repository:
 ```
 <settings 
