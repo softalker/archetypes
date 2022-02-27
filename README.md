@@ -1,6 +1,6 @@
 [![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 # Softalks Maven archetypes
-This repository was created to contain the source code and artifacts of all the [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) needed by any Softalks solution
+This repository was created to contain the source code and artifacts of all the [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) needed by any Softalks software component
 ## Archetype selection
 To use an archetype of this repository you have first to identify it by setting three properties:
 - **archetypeGroupId**
