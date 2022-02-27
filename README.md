@@ -13,7 +13,7 @@ This four parameters of the generation process (and no other) can be predefined 
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-If you choose not to use this file you must put the same content on the command line (alongside all other properties) when requesting the project generation
+If you choose not to use this file you must put the same content on the command line (alongside all other properties) when generating the project
 ## Target project properties
 Four more properties needs to be set before generating the project:
 - **groupId**
@@ -58,6 +58,7 @@ Your [settings.xml](https://maven.apache.org/settings.html) file needs to be con
   ...
 </settings>
 ```
-We can now create (by example) a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11`
+Project generation
+Let's create (by example) a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11`
 ```
 mvn archetype:generate --batch-mode -DgroupId=junit -DartifactId=junit -Dversion=4.11
