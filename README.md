@@ -14,14 +14,14 @@ This four parameters of the generation process (and no other) can be predefined 
 > If you choose not to use this file you must put the same content on the command line, alongside all other properties, when invoking the `archetype:generate` goal
 
 Four more properties needs to be set before generating a project based on a Maven archetype:
-- groupId
-- artifactId
-- version (default: **1.0-SNAPSHOT**)
-- package (default: **${groupId}**. Only used for projects containing Java code)
+- **groupId**
+- **artifactId**
+- **version** (default: **1.0-SNAPSHOT**)
+- **package** (default: **${groupId}**. Only used for projects containing Java code)
 
-The selected archetype can define its own required properties and default values. Check its documentation before using it
+The selected archetype can have its own required properties and default values. Check its documentation before using it
 
-You must also configure your [settings.xml](https://maven.apache.org/settings.html) file to be like this:
+Your [settings.xml](https://maven.apache.org/settings.html) file needs to be configured to use this repository:
 ```
 <settings 
 	xmlns="http://maven.apache.org/SETTINGS/1.0.0"
@@ -56,6 +56,6 @@ You must also configure your [settings.xml](https://maven.apache.org/settings.ht
   ...
 </settings>
 ```
-We can now create (by example) a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11` using the [archetype:generate](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) Maven goal
+We can now create (by example) a project based on the [void](https://github.com/softalks/archetypes/tree/main/void) archetype (supposing we have the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file content specified above) that will depend on `junit:junit:4.11`
 ```
 mvn archetype:generate --batch-mode -DgroupId=junit -DartifactId=junit -Dversion=4.11
