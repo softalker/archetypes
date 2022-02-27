@@ -11,9 +11,9 @@ This four parameters of the generation process (and no other) can be predefined 
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-> If you choose not to use this file you must put this same content on the command line, alongside all other properties, when invoking the `archetype:generate` goal
+> If you choose not to use this file you must put the same content on the command line, alongside all other properties, when invoking the `archetype:generate` goal
 
-Every archetype needs another four properties before you can use it to generata a project:
+Four more properties needs to be set before generating a project based on a Maven archetype:
 - groupId
 - artifactId
 - version (default: **1.0-SNAPSHOT**)
