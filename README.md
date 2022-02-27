@@ -12,7 +12,7 @@ This four parameters of the generation process (and no other) can be predefined 
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
 > If you choose not to use this file you must put the same content on the command line, alongside all other properties, when invoking the `archetype:generate` goal
-## Project properties
+## Target project properties
 Four more properties needs to be set before launching generation:
 - **groupId**
 - **artifactId**
@@ -20,7 +20,7 @@ Four more properties needs to be set before launching generation:
 - **package** (default: **${groupId}**. Only used for projects containing Java code)
 
 The selected archetype can have its own required properties and default values. Check its documentation before using it
-## User configuration
+## User level configuration
 Your [settings.xml](https://maven.apache.org/settings.html) file needs to be configured to use this repository:
 ```
 <settings 
