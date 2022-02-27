@@ -1,6 +1,6 @@
 [![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 # Softalks Maven archetypes
-This repository was created to contain the source code and artifacts of all the [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) needed by any Softalks software component
+This repository was created to contain the source code and artifacts of the [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) needed by other Softalks software components
 ## Archetype selection
 To use an archetype of this repository you have first to identify it by setting three properties:
 - **archetypeGroupId**
@@ -59,6 +59,6 @@ Your [settings.xml](https://maven.apache.org/settings.html) file needs to be con
 </settings>
 ```
 ## Project generation
-Having the [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) file loaded with the content specified above, this commnand represents a valid example on how to create a project based on the [void Softalks archetype](https://github.com/softalks/archetypes/tree/main/void) that will depend on `junit:junit:4.11`
+Having the files [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) and [settings.xml](https://maven.apache.org/settings.html) configured as specified above, the following command would be a valid example on how to use the [void Softalks archetype](https://github.com/softalks/archetypes/tree/main/void) to generate a Maven project depending on `junit:junit:4.11`
 ```
 mvn archetype:generate --batch-mode -DgroupId=junit -DartifactId=junit -Dversion=4.11
