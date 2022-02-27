@@ -5,9 +5,9 @@ To use an [archetype](https://maven.apache.org/guides/introduction/introduction-
 - **archetypeArtifactId**
 - **archetypeVersion** (default: **1.0**)
 
-The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-plugin/) (at least in version `3.2.1`) loads, by default, a big (and useless in this case) list of archetypes when invoking the `archetype:generate` goal. You can set the **archetypeCatalog** property with the value **internal** to avoid it
+The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-plugin/) (at least in version `3.2.1`) loads, by default, a big (and useless in this case) list of archetypes when invoking the `archetype:generate` [goal](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html). You can set the **archetypeCatalog** property with the value **internal** to avoid it
 
-This four parameters of the generation process (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content is an example valid to generate projects based on one specific Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
+This four parameters of the generation process (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content represents a valid example to generate projects based on one specific Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
