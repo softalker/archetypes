@@ -23,7 +23,7 @@ Four more properties needs to be set before generating the project:
 
 The selected archetype can have its own required properties and default values. Check its documentation before using it
 ## User level configuration
-Your [settings.xml](https://maven.apache.org/settings.html) file needs to be configured to use this repository:
+Your [settings.xml](https://maven.apache.org/settings.html) file needs to be configured for using this repository:
 ```
 <settings 
 	xmlns="http://maven.apache.org/SETTINGS/1.0.0"
