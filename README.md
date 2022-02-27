@@ -7,7 +7,7 @@ To use an archetype of this repository you have first to identify it by setting 
 - **archetypeArtifactId**
 - **archetypeVersion** (default: **1.0**)
 
-The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-plugin/) (at least in version `3.2.1`) loads a huge and useless, in this case, list of archetypes at [project generation](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html) time. You can set the **archetypeCatalog** property with the value **internal** to avoid it
+The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-plugin/), at least in version `3.2.1`, loads a huge and useless (in this case) list of archetypes at [project generation time](https://maven.apache.org/archetype/maven-archetype-plugin/generate-mojo.html). You can set the **archetypeCatalog** property with the value **internal** to avoid it
 
 This four parameters of the generation process (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content represents a valid example to generate projects based on one specific Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
