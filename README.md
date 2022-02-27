@@ -11,7 +11,7 @@ This four parameters of the generation process (and no other) can be predefined 
 ```
 -DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.1 -DarchetypeCatalog=internal
 ```
-> If you choose not to use this file you must put this same content on the command line when invoking the `archetype:generate` (as you need do with all other properties)
+> If you choose not to use this file you must put this same content on the command line when invoking the `archetype:generate` goal (alongside all other properties)
 
 Every archetype needs another four properties before you can use it to generata a project:
 - groupId
