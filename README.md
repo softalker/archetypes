@@ -11,7 +11,7 @@ The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-
 
 This four parameters of the generation process (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content represents a valid example to generate projects based on one specific Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
--DarchetypeGroupId=com.softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0 -DarchetypeCatalog=internal
+-DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeCatalog=internal
 ```
 If you choose not to use this file you must put the same content on the command line (alongside all other properties) when generating the project
 ## Target project properties
@@ -61,4 +61,4 @@ Your [settings.xml](https://maven.apache.org/settings.html) file needs to be con
 ## Project generation
 Having the files [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) and [settings.xml](https://maven.apache.org/settings.html) configured as specified above, the following command would be a valid example on how to use the [void Softalks archetype](https://github.com/softalks/archetypes/tree/main/void) to generate a project depending on `junit:junit:4.11`
 ```
-mvn archetype:generate --batch-mode -DgroupId=junit -DartifactId=junit -Dversion=4.11
+mvn archetype:generate --batch-mode --update-snapshots -DgroupId=junit -DartifactId=junit -Dversion=4.11
