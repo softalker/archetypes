@@ -4,13 +4,13 @@
     xsi:schemaLocation="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0 http://maven.apache.org/xsd/archetype-descriptor-1.1.0.xsd">
   <requiredProperties>
     <requiredProperty key="repositoryUsername">
-      <defaultValue>undefined"</defaultValue>
+      <defaultValue>void</defaultValue>
     </requiredProperty>
     <requiredProperty key="repositoryPassword">
-      <defaultValue>undefined"</defaultValue>
+      <defaultValue>void</defaultValue>
     </requiredProperty>
     <requiredProperty key="repositoryUrl">
-      <defaultValue>undefined</defaultValue>
+      <defaultValue>void</defaultValue>
     </requiredProperty>
   </requiredProperties>
   <fileSets>
