@@ -59,6 +59,6 @@ Your [settings.xml](https://maven.apache.org/settings.html) file needs to be con
 </settings>
 ```
 ## Project generation
-Having the files [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) and [settings.xml](https://maven.apache.org/settings.html) configured as specified above, the following command would be a valid example on how to use the [void Softalks archetype](https://github.com/softalks/archetypes/tree/main/void) to generate a Maven project depending on `junit:junit:4.11`
+Having the files [.mvn/jvm.options](https://maven.apache.org/configure.html#mvn-jvm-config-file) and [settings.xml](https://maven.apache.org/settings.html) configured as specified above, the following command would be a valid example on how to use the [void Softalks archetype](https://github.com/softalks/archetypes/tree/main/void) to generate a project depending on `junit:junit:4.11`
 ```
 mvn archetype:generate --batch-mode -DgroupId=junit -DartifactId=junit -Dversion=4.11
