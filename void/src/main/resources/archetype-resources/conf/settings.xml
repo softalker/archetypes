@@ -2,8 +2,8 @@
     <servers>
         <server>
             <id>repository</id>
-            <username>$actor</username>
-            <password>$token</password>
+            <username>${repositoryUsername}</username>
+            <password>${repositoryPassword}</password>
         </server>
     </servers>
 </settings>
