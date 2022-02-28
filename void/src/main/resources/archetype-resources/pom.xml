@@ -22,7 +22,7 @@
     <repositories>
         <repository>
             <id>repository</id>
-            <url>${repository}</url>
+            <url>${repositoryUrl}</url>
         </repository>
     </repositories>
 
