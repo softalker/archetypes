@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - 'vanilla/**'
+      - '.github/workflows/abstract.yml'
       - '.github/workflows/vanilla.yml'
   workflow_dispatch:
 jobs:
