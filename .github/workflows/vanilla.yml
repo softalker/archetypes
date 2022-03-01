@@ -1,0 +1,31 @@
+on:
+  push:
+    paths:
+      - 'vanilla/**'
+      - '.github/workflows/vanilla.yml'
+  workflow_dispatch:
+jobs:
+  build:
+    permissions:
+      packages: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/cache@v2
+        with:
+          path: ~/.m2/repository
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+      - uses: s4u/maven-settings-action@v2.5.0
+        with:
+          servers: |
+            [{
+              "id": "upstream",
+              "username": "${{ github.actor }}",
+              "password": "${{ secrets.GITHUB_TOKEN }}"
+            }]
+      - name: main
+        run: |
+          cd void
+          mvn --batch-mode --update-snapshots deploy
