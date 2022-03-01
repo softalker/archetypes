@@ -7,7 +7,7 @@
 			<defaultValue>Application</defaultValue>
 		</requiredProperty>
 		<requiredProperty key="package">
-			<defaultValue>${groupId}.${artifactId}</defaultValue>
+			<defaultValue>com.github.${groupId}.${artifactId}</defaultValue>
 		</requiredProperty>
 	</requiredProperties>
 	<fileSets>
