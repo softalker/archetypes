@@ -6,6 +6,9 @@
 		<requiredProperty key="class">
 			<defaultValue>Application</defaultValue>
 		</requiredProperty>
+		<requiredProperty key="package">
+			<defaultValue>${groupId}.${artifactId}</defaultValue>
+		</requiredProperty>
 	</requiredProperties>
 	<fileSets>
 		<fileSet filtered="true" packaged="true">
