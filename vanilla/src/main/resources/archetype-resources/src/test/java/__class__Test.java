@@ -1,3 +1,5 @@
+package ${package};
+
 import org.junit.jupiter.api.Test;
  
 class ${class}Test {
