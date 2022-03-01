@@ -27,5 +27,5 @@ jobs:
             }]
       - name: main
         run: |
-          cd void
+          cd vanilla
           mvn --batch-mode --update-snapshots deploy
