@@ -1,7 +1,7 @@
 [![.github/workflows/void.yml](https://github.com/softalks/archetypes/actions/workflows/void.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/void.yml)
 &nbsp;&nbsp;&nbsp;[![.github/workflows/vanilla.yml](https://github.com/softalks/archetypes/actions/workflows/vanilla.yml/badge.svg)](https://github.com/softalks/archetypes/actions/workflows/vanilla.yml)
 # Softalks Maven archetypes
-This repository was created to contain the source code and artifacts of the [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) needed by other Softalks software components
+This repository was created to contain the source code and artifacts of the [Maven archetypes](https://maven.apache.org/guides/introduction/introduction-to-archetypes.html) needed by another Softalks components
 ## Archetype selection
 To use an archetype of this repository you have first to identify it by setting three properties:
 - **archetypeGroupId**
@@ -12,7 +12,7 @@ The [Maven Archetype Plugin](https://maven.apache.org/archetype/maven-archetype-
 
 This four parameters of the generation process (and no other) can be predefined on the [.mvn/jvm.config](https://maven.apache.org/configure.html#mvn-jvm-config-file) file. The following file content represents a valid example to generate projects based on one specific Softalks Maven archetype: [void](https://github.com/softalks/archetypes/tree/main/void)
 ```
--DarchetypeGroupId=softalks -DarchetypeArtifactId=archetypes.void -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeCatalog=internal
+-DarchetypeGroupId=com.softalks.archetypes -DarchetypeArtifactId=void -DarchetypeVersion=1.0-SNAPSHOT -DarchetypeCatalog=internal
 ```
 If you choose not to use this file you must put the same content on the command line (alongside all other properties) when generating the project
 ## Target project properties
